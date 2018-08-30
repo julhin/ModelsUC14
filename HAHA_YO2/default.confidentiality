@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ASCII"?>
+<edu.kit.kastel.scbs.confidentiality:ConfidentialitySpecification xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:edu.kit.kastel.scbs.confidentiality="http://edu.kit.kastel.scbs.confidentiality" id="_Hp4pMH7MEeiaS-Ue-vOVzA">
+  <locations id="_bWPCmn7NEeiaS-Ue-vOVzA" name="CustomerDatabase"/>
+  <locations id="_E6sXun7PEeiaS-Ue-vOVzA" name="OrderDatabase"/>
+  <tamperProtections id="_DLt3-37QEeiaS-Ue-vOVzA" name="System"/>
+  <locationsAndTamperProtectionsPairs id="_BqyQvH7QEeiaS-Ue-vOVzA" locations="_bWPCmn7NEeiaS-Ue-vOVzA" tamperProtections="_DLt3-37QEeiaS-Ue-vOVzA"/>
+  <locationsAndTamperProtectionsPairs id="_Jxl_zH7QEeiaS-Ue-vOVzA" locations="_E6sXun7PEeiaS-Ue-vOVzA" tamperProtections="_DLt3-37QEeiaS-Ue-vOVzA"/>
+</edu.kit.kastel.scbs.confidentiality:ConfidentialitySpecification>

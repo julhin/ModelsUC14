@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<system:System xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:composition="http://palladiosimulator.org/PalladioComponentModel/Core/Composition/5.2" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xmlns:system="http://palladiosimulator.org/PalladioComponentModel/System/5.2" id="_LraO8HhrEeieOa1iKavmwQ" entityName="defaultSystem">
+  <assemblyContexts__ComposedStructure id="_QABewHhrEeieOa1iKavmwQ" entityName="Assembly_PickupShop &lt;PickupShop>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_ZQv7UHCsEei11fv97AP7Vg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_Sx9a4HhrEeieOa1iKavmwQ" entityName="Assembly_Tradingssystem::inventory:app &lt;Tradingssystem::inventory:app>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_ZifLkHCsEei11fv97AP7Vg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_hiMvEHj6EeieOa1iKavmwQ" entityName="Assembly_Tradingssystem::inventory:data &lt;Tradingssystem::inventory:data>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_ZynSQHCsEei11fv97AP7Vg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_jWxEAHj6EeieOa1iKavmwQ" entityName="Assembly_ServiceAdapter &lt;ServiceAdapter>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_alWWwHCsEei11fv97AP7Vg"/>
+  </assemblyContexts__ComposedStructure>
+  <assemblyContexts__ComposedStructure id="_kOUXEHj6EeieOa1iKavmwQ" entityName="Assembly_Webservice::Inventory &lt;Webservice::Inventory>">
+    <encapsulatedComponent__AssemblyContext xsi:type="repository:BasicComponent" href="default.repository#_a1V6kHCsEei11fv97AP7Vg"/>
+  </assemblyContexts__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_VdfUIHkHEeieOa1iKavmwQ" entityName="Connector Assembly_PickupShop &lt;PickupShop> -> Assembly_Webservice::Inventory &lt;Webservice::Inventory>" requiringAssemblyContext_AssemblyConnector="_QABewHhrEeieOa1iKavmwQ" providingAssemblyContext_AssemblyConnector="_kOUXEHj6EeieOa1iKavmwQ">
+    <providedRole_AssemblyConnector href="default.repository#_EVUtcHCwEei11fv97AP7Vg"/>
+    <requiredRole_AssemblyConnector href="default.repository#_GwPQsHCwEei11fv97AP7Vg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_XXfisHkHEeieOa1iKavmwQ" entityName="Connector Assembly_Webservice::Inventory &lt;Webservice::Inventory> -> Assembly_Tradingssystem::inventory:app &lt;Tradingssystem::inventory:app>" requiringAssemblyContext_AssemblyConnector="_kOUXEHj6EeieOa1iKavmwQ" providingAssemblyContext_AssemblyConnector="_Sx9a4HhrEeieOa1iKavmwQ">
+    <providedRole_AssemblyConnector href="default.repository#_Exwx0HCwEei11fv97AP7Vg"/>
+    <requiredRole_AssemblyConnector href="default.repository#_HVjkQHCwEei11fv97AP7Vg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_ZMQr8HkHEeieOa1iKavmwQ" entityName="Connector Assembly_Tradingssystem::inventory:app &lt;Tradingssystem::inventory:app> -> Assembly_Tradingssystem::inventory:data &lt;Tradingssystem::inventory:data>" requiringAssemblyContext_AssemblyConnector="_Sx9a4HhrEeieOa1iKavmwQ" providingAssemblyContext_AssemblyConnector="_hiMvEHj6EeieOa1iKavmwQ">
+    <providedRole_AssemblyConnector href="default.repository#_FRsPEHCwEei11fv97AP7Vg"/>
+    <requiredRole_AssemblyConnector href="default.repository#_H1YT0HCwEei11fv97AP7Vg"/>
+  </connectors__ComposedStructure>
+  <connectors__ComposedStructure xsi:type="composition:AssemblyConnector" id="_aWNWkHkHEeieOa1iKavmwQ" entityName="Connector Assembly_Tradingssystem::inventory:data &lt;Tradingssystem::inventory:data> -> Assembly_ServiceAdapter &lt;ServiceAdapter>" requiringAssemblyContext_AssemblyConnector="_hiMvEHj6EeieOa1iKavmwQ" providingAssemblyContext_AssemblyConnector="_jWxEAHj6EeieOa1iKavmwQ">
+    <providedRole_AssemblyConnector href="default.repository#_FwjVUHCwEei11fv97AP7Vg"/>
+    <requiredRole_AssemblyConnector href="default.repository#_I8iwMHCwEei11fv97AP7Vg"/>
+  </connectors__ComposedStructure>
+  <providedRoles_InterfaceProvidingEntity xsi:type="repository:OperationProvidedRole" id="_cVzPwHkHEeieOa1iKavmwQ" entityName="Provided_IStockManagerInterface">
+    <providedInterface__OperationProvidedRole href="default.repository#_dySM0HCsEei11fv97AP7Vg"/>
+  </providedRoles_InterfaceProvidingEntity>
+</system:System>

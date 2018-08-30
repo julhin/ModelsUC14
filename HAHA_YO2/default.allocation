@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<allocation:Allocation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:allocation="http://palladiosimulator.org/PalladioComponentModel/Allocation/5.2" id="_0FQusHkHEeieOa1iKavmwQ" entityName="defaultAllocation">
+  <targetResourceEnvironment_Allocation href="default.resourceenvironment#/"/>
+  <system_Allocation href="default.system#_LraO8HhrEeieOa1iKavmwQ"/>
+  <allocationContexts_Allocation id="_1oTOwHkHEeieOa1iKavmwQ" entityName="Allocation_Assembly_PickupShop &lt;PickupShop> &lt;PickupShop>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_jWg5cHkHEeieOa1iKavmwQ"/>
+    <assemblyContext_AllocationContext href="default.system#_QABewHhrEeieOa1iKavmwQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_D2dWkHkIEeieOa1iKavmwQ" entityName="Allocation_Assembly_Tradingssystem::inventory:app &lt;Tradingssystem::inventory:app> &lt;Tradingssystem::inventory:app>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_jWg5cHkHEeieOa1iKavmwQ"/>
+    <assemblyContext_AllocationContext href="default.system#_Sx9a4HhrEeieOa1iKavmwQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_EaOyAHkIEeieOa1iKavmwQ" entityName="Allocation_Assembly_Tradingssystem::inventory:data &lt;Tradingssystem::inventory:data> &lt;Tradingssystem::inventory:data>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_jWg5cHkHEeieOa1iKavmwQ"/>
+    <assemblyContext_AllocationContext href="default.system#_hiMvEHj6EeieOa1iKavmwQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_FFFF0HkIEeieOa1iKavmwQ" entityName="Allocation_Assembly_ServiceAdapter &lt;ServiceAdapter> &lt;ServiceAdapter>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_jWg5cHkHEeieOa1iKavmwQ"/>
+    <assemblyContext_AllocationContext href="default.system#_jWxEAHj6EeieOa1iKavmwQ"/>
+  </allocationContexts_Allocation>
+  <allocationContexts_Allocation id="_F1ZIcHkIEeieOa1iKavmwQ" entityName="Allocation_Assembly_Webservice::Inventory &lt;Webservice::Inventory> &lt;Webservice::Inventory>">
+    <resourceContainer_AllocationContext href="default.resourceenvironment#_jWg5cHkHEeieOa1iKavmwQ"/>
+    <assemblyContext_AllocationContext href="default.system#_kOUXEHj6EeieOa1iKavmwQ"/>
+  </allocationContexts_Allocation>
+</allocation:Allocation>

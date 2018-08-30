@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:characteristics="http://www.palladiosimulator.org/pcm/dataprocessing/characteristics/0.1/" xmlns:data="http://www.palladiosimulator.org/pcm/dataprocessing/data/0.1/" xmlns:dataprocessing="http://www.palladiosimulator.org/pcm/dataprocessing/0.1/" xmlns:emfprofileapplication="http://www.modelversioning.org/emfprofile/application/1.1" xmlns:processing="http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/" xmlns:repository="http://palladiosimulator.org/PalladioComponentModel/Repository/5.2" xsi:schemaLocation="http://www.palladiosimulator.org/pcm/dataprocessing/characteristics/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//characteristics http://www.palladiosimulator.org/pcm/dataprocessing/data/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//data http://www.palladiosimulator.org/pcm/dataprocessing/processing/0.1/ http://www.palladiosimulator.org/pcm/dataprocessing/0.1/#//processing http://palladiosimulator.org/PalladioComponentModel/Repository/5.2 http://palladiosimulator.org/PalladioComponentModel/5.2#//repository">
+  <dataprocessing:DataSpecification>
+    <dataProcessingContainers id="_iJ8nAHPVEeinoOBpMH07LA" entityName="PickUpShop: CreateReport">
+      <operations xsi:type="processing:PerformDataTransmissionOperation" id="_3EIRs3oGEeiCBNz7WZFmbw" entityName="PickUpShop.createReport">
+        <inputMappings xsi:type="processing:DataParameterMapping" id="_2Bvq0HoKEeiCBNz7WZFmbw" data="_ZU5PEHQbEeinoOBpMH07LA">
+          <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+        </inputMappings>
+        <inputMappings xsi:type="processing:DataResultMapping" id="_nDA4s3ptEeiCBNz7WZFmbw" data="_0lmEIoUGEeiwX_rGX5ykig">
+          <operation href="default.repository#_ZY2fsHCyEei11fv97AP7Vg"/>
+          <receivedData xsi:type="data:ResultBasedData" id="_6-anYoUGEeiwX_rGX5ykig" entityName="PickUpShop.resultdata">
+            <operation href="default.repository#_ZY2fsHCyEei11fv97AP7Vg"/>
+          </receivedData>
+        </inputMappings>
+      </operations>
+    </dataProcessingContainers>
+    <dataProcessingContainers id="_MyLssHQsEeinoOBpMH07LA" entityName="Webservice:Inventory: CreateReport">
+      <operations xsi:type="processing:PerformDataTransmissionOperation" id="_9RNiM3oKEeiCBNz7WZFmbw" entityName="Webservice:Inventory.createReport">
+        <inputMappings xsi:type="processing:DataParameterMapping" id="_DDpa4HoLEeiCBNz7WZFmbw" data="_o_774HQsEeinoOBpMH07LA">
+          <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+        </inputMappings>
+        <inputMappings xsi:type="processing:DataResultMapping" id="_fZeUc3ptEeiCBNz7WZFmbw">
+          <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
+        </inputMappings>
+      </operations>
+    </dataProcessingContainers>
+    <dataProcessingContainers id="_wvqY8HQyEeinoOBpMH07LA" entityName="Ts:Inv:App_Assemble">
+      <operations xsi:type="processing:UnionDataOperation" id="_SZcNWKyZEeigp8spaUS-Ug" entityName="TS:inv:app.assembleReportForAnOrder" consumedData="_gRw9wooYEei-urmb0SU48A">
+        <resultingData xsi:type="data:ResultBasedData" id="_0lmEIoUGEeiwX_rGX5ykig" entityName="Webservice:Inv_resultdata">
+          <operation href="default.repository#_TZ4qEHC2Eei11fv97AP7Vg"/>
+        </resultingData>
+      </operations>
+    </dataProcessingContainers>
+    <dataProcessingContainers id="_nFUIoHQ0EeinoOBpMH07LA" entityName="Ts:Inv:App: CreateReport">
+      <operations xsi:type="processing:PerformDataTransmissionOperation" id="_WI_7I3oLEeiCBNz7WZFmbw" entityName="TS::inv:app.createReport">
+        <inputMappings xsi:type="processing:DataParameterMapping" id="_ZvsVAHoLEeiCBNz7WZFmbw" data="_pEoDEHQ2EeinoOBpMH07LA">
+          <parameter href="default.repository#/0/@interfaces__Repository.2/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+        </inputMappings>
+        <outputMappings xsi:type="processing:DataResultMapping" id="_uEjq44NXEeiZU6L_PsRjfw" data="_gRw9wooYEei-urmb0SU48A">
+          <operation href="default.repository#_3RacIHC4Eei11fv97AP7Vg"/>
+          <receivedData xsi:type="data:ResultBasedData" id="_2xdMAooaEei-urmb0SU48A" entityName="TS:inv:app_OrdersForCustomers">
+            <operation href="default.repository#_3RacIHC4Eei11fv97AP7Vg"/>
+          </receivedData>
+        </outputMappings>
+      </operations>
+    </dataProcessingContainers>
+    <dataProcessingContainers id="_aMwywHQ9EeinoOBpMH07LA" entityName="ServiceAdapter.executeQuery">
+      <operations xsi:type="processing:LoadAllDataOperation" id="_9M7gcomzEei-urmb0SU48A" entityName="ServiceAdapter.loadCompleteDatabase" store="_2ws7UImcEei-urmb0SU48A">
+        <resultingData xsi:type="data:ResultBasedData" id="_I3itcom0Eei-urmb0SU48A" entityName="ServiceAdapter.completeDatabase">
+          <operation href="default.repository#_LXKKgIm0Eei-urmb0SU48A"/>
+        </resultingData>
+      </operations>
+    </dataProcessingContainers>
+    <dataProcessingContainers id="_H1pBMInYEei-urmb0SU48A" entityName="TS:inv:data_extractData">
+      <operations xsi:type="processing:SelectionDataOperation" id="_QNHvGYoQEei-urmb0SU48A" entityName="SelectCustomers" inputs="_I3itcom0Eei-urmb0SU48A" parameterData="_zSMj8ILUEeiX9-UWTLrU2A">
+        <output xsi:type="data:ResultBasedData" id="_iqDgQooXEei-urmb0SU48A" entityName="TS:inv:data_DatabaseEntriesCustomers">
+          <operation href="default.repository#_DevUoHC5Eei11fv97AP7Vg"/>
+        </output>
+      </operations>
+      <operations xsi:type="processing:ProjectionDataOperation" id="_Q6qKh4oQEei-urmb0SU48A" entityName="SelctOrdersForCustomers" inputs="_I3itcom0Eei-urmb0SU48A" parameterData="_iqDgQooXEei-urmb0SU48A">
+        <output xsi:type="data:ResultBasedData" id="_gRw9wooYEei-urmb0SU48A" entityName="TS:inv:data_OrdersForCustomers">
+          <operation href="default.repository#_DevUoHC5Eei11fv97AP7Vg"/>
+        </output>
+      </operations>
+    </dataProcessingContainers>
+    <dataSEFFSpecifications id="_VY-MEnQbEeinoOBpMH07LA" entityName="PickUpShop.createReport">
+      <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData_ID">
+        <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+      </inputData>
+    </dataSEFFSpecifications>
+    <dataSEFFSpecifications id="_lBODknQsEeinoOBpMH07LA" entityName="Webservice::Inventory.createReport">
+      <inputData id="_o_774HQsEeinoOBpMH07LA" entityName="Webservice::Inventory.inputData_ID">
+        <parameter href="default.repository#/0/@interfaces__Repository.1/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+      </inputData>
+    </dataSEFFSpecifications>
+    <dataSEFFSpecifications id="_l05-wHQ2EeinoOBpMH07LA" entityName="Ts::Inv:App.createReport">
+      <inputData id="_pEoDEHQ2EeinoOBpMH07LA" entityName="TS:inv:app.createReport_inputdata_ID">
+        <parameter href="default.repository#/0/@interfaces__Repository.2/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
+      </inputData>
+    </dataSEFFSpecifications>
+    <dataSEFFSpecifications id="_MNp68nQ6EeinoOBpMH07LA" entityName="Ts::Inv:data.createReportQuery">
+      <inputData id="_zSMj8ILUEeiX9-UWTLrU2A" entityName="TS:inv:data.createReportQuery_inputdata_ID"/>
+    </dataSEFFSpecifications>
+    <storeContainers id="_ygVSU4mcEei-urmb0SU48A" entityName="DataBase_v2.0">
+      <stores id="_2ws7UImcEei-urmb0SU48A" entityName="CUSTOMER_DB">
+        <dataType xsi:type="repository:CompositeDataType" href="default.repository#_wcU7zYmzEei-urmb0SU48A"/>
+      </stores>
+      <stores id="_Y70mII9WEeidJ4dLBayEPA" entityName="USER_DB"/>
+    </storeContainers>
+    <characteristicContainer id="_iZedxKttEeirUesg_GcfaQ" entityName="char.allowed">
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_oGNXEKttEeirUesg_GcfaQ"/>
+    </characteristicContainer>
+    <characteristicContainer id="_j8VXpKttEeirUesg_GcfaQ" entityName="char.denied">
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_o5nJ8KttEeirUesg_GcfaQ"/>
+    </characteristicContainer>
+    <characteristicContainer id="_kgM5tKttEeirUesg_GcfaQ" entityName="char.system">
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_pkiWQKttEeirUesg_GcfaQ"/>
+    </characteristicContainer>
+    <relatedCharacteristics id="_2UESBatvEeirUesg_GcfaQ" entityName="Report" characteristics="_iZedxKttEeirUesg_GcfaQ">
+      <relatedEntity xsi:type="repository:CollectionDataType" href="default.repository#_yrJzHHQjEeinoOBpMH07LA"/>
+    </relatedCharacteristics>
+    <relatedCharacteristics id="_CjI29atwEeirUesg_GcfaQ" entityName="Customer.id" characteristics="_iZedxKttEeirUesg_GcfaQ">
+      <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_rKAB3X7DEeiaS-Ue-vOVzA"/>
+    </relatedCharacteristics>
+    <relatedCharacteristics id="_C5eTVatwEeirUesg_GcfaQ" entityName="Customer.credentials" characteristics="_j8VXpKttEeirUesg_GcfaQ">
+      <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_rKAB3X7DEeiaS-Ue-vOVzA"/>
+    </relatedCharacteristics>
+    <relatedCharacteristics id="_DxKJRatwEeirUesg_GcfaQ" entityName="Customer.purchasedProducts" characteristics="_iZedxKttEeirUesg_GcfaQ">
+      <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_rKAB3X7DEeiaS-Ue-vOVzA"/>
+    </relatedCharacteristics>
+    <relatedCharacteristics id="_BCI-RatwEeirUesg_GcfaQ" entityName="DbEntries" characteristics="_kgM5tKttEeirUesg_GcfaQ">
+      <relatedEntity xsi:type="repository:CollectionDataType" href="default.repository#_SR7kTIm0Eei-urmb0SU48A"/>
+    </relatedCharacteristics>
+    <relatedCharacteristics id="_VOEsFatwEeirUesg_GcfaQ" entityName="Query" characteristics="_kgM5tKttEeirUesg_GcfaQ">
+      <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_ehhrHX-XEeiYVZcJd-4VXQ"/>
+    </relatedCharacteristics>
+    <relatedCharacteristics id="_W2td1atwEeirUesg_GcfaQ" entityName="List&lt;IOrderEntries>" characteristics="_kgM5tKttEeirUesg_GcfaQ">
+      <relatedEntity xsi:type="repository:CollectionDataType" href="default.repository#_UxQVvHQkEeinoOBpMH07LA"/>
+    </relatedCharacteristics>
+  </dataprocessing:DataSpecification>
+  <emfprofileapplication:ProfileApplication>
+    <importedProfiles nsURI="http://www.palladiosimulator.org/pcm/dataprocessing/profile/0.1/" location="platform:/plugin/org.palladiosimulator.pcm.dataprocessing.profile/profile.emfprofile_diagram"/>
+  </emfprofileapplication:ProfileApplication>
+</xmi:XMI>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+	<row>
+	<item>
+	Roles,datatypes
+	</item>
+	
+	<item>
+	id
+	</item>
+	
+	<item>
+	Report
+	</item>
+	
+	<item>
+	List:IOrderEntries
+	</item>
+	
+	<item>
+	query
+	</item>
+	</row>
+
+
+	<row>
+	<item>
+	Stockmanager
+	</item>
+	
+	<item>
+	granted
+	</item>
+	
+	<item>
+	granted
+	</item>
+	
+	<item>
+	denied
+	</item>
+	
+	<item>
+	denied
+	</item>
+	</row>
+
+	<row>
+	<item>
+	System
+	</item>
+	
+	<item>
+	granted
+	</item>
+	
+	<item>
+	granted
+	</item>
+	
+	<item>
+	granted
+	</item>
+	
+	<item>
+	granted
+	</item>
+	</row>
