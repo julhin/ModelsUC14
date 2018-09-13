@@ -78,7 +78,7 @@
     <characteristicTypeContainers id="_RzveY7dREeiLDryfJkyqgQ">
       <characteristicTypes xsi:type="characteristics:EnumCharacteristicType" id="_U8ZRYLdREeiLDryfJkyqgQ" entityName="systemData_L4"/>
       <enumerations id="_ZCmRwbdREeiLDryfJkyqgQ" entityName="charEnum.Level4">
-        <literals id="_eUiFcLdREeiLDryfJkyqgQ" entityName="NoAccess"/>
+        <literals id="_eUiFcLdREeiLDryfJkyqgQ" entityName="Default"/>
         <literals id="_ezR28LdREeiLDryfJkyqgQ" entityName="systemData"/>
       </enumerations>
     </characteristicTypeContainers>
