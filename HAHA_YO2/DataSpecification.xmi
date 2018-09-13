@@ -61,6 +61,27 @@
         </output>
       </operations>
     </dataProcessingContainers>
+    <characteristicTypeContainers id="_mO4iUbdQEeiLDryfJkyqgQ">
+      <characteristicTypes xsi:type="characteristics:EnumCharacteristicType" id="_v1EZcLdQEeiLDryfJkyqgQ" entityName="customerData_L1" enum="_2sj1sbdQEeiLDryfJkyqgQ"/>
+      <enumerations id="_2sj1sbdQEeiLDryfJkyqgQ" entityName="charEnum.Level1">
+        <literals id="_3nnIsLdQEeiLDryfJkyqgQ" entityName="FullAccess"/>
+        <literals id="_4IuRsLdQEeiLDryfJkyqgQ" entityName="customerData"/>
+      </enumerations>
+    </characteristicTypeContainers>
+    <characteristicTypeContainers id="_A9i9U7dREeiLDryfJkyqgQ">
+      <characteristicTypes xsi:type="characteristics:EnumCharacteristicType" id="_B_BocLdREeiLDryfJkyqgQ" entityName="productSalesData_L2" enum="_I2WFkbdREeiLDryfJkyqgQ"/>
+      <enumerations id="_I2WFkbdREeiLDryfJkyqgQ" entityName="charEnum.Level2">
+        <literals id="_L0iVALdREeiLDryfJkyqgQ" entityName="AccessToUsedData"/>
+        <literals id="_MhQRELdREeiLDryfJkyqgQ" entityName="productSalesData"/>
+      </enumerations>
+    </characteristicTypeContainers>
+    <characteristicTypeContainers id="_RzveY7dREeiLDryfJkyqgQ">
+      <characteristicTypes xsi:type="characteristics:EnumCharacteristicType" id="_U8ZRYLdREeiLDryfJkyqgQ" entityName="systemData_L4"/>
+      <enumerations id="_ZCmRwbdREeiLDryfJkyqgQ" entityName="charEnum.Level4">
+        <literals id="_eUiFcLdREeiLDryfJkyqgQ" entityName="NoAccess"/>
+        <literals id="_ezR28LdREeiLDryfJkyqgQ" entityName="systemData"/>
+      </enumerations>
+    </characteristicTypeContainers>
     <dataSEFFSpecifications id="_VY-MEnQbEeinoOBpMH07LA" entityName="Webfrontend.createReport">
       <inputData id="_ZU5PEHQbEeinoOBpMH07LA" entityName="PickUpShop.inputData_ID">
         <parameter href="default.repository#/0/@interfaces__Repository.0/@signatures__OperationInterface.0/@parameters__OperationSignature.0"/>
@@ -94,35 +115,34 @@
         <dataType xsi:type="repository:CollectionDataType" href="default.repository#_Yc12rHQkEeinoOBpMH07LA"/>
       </stores>
     </storeContainers>
-    <characteristicContainer id="_iZedxKttEeirUesg_GcfaQ" entityName="char.allowed">
-      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_oGNXEKttEeirUesg_GcfaQ"/>
+    <characteristicContainer id="_aTz3dLdQEeiLDryfJkyqgQ" entityName="char.Webfrontend">
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_kpc1kLdQEeiLDryfJkyqgQ" characteristicType="_v1EZcLdQEeiLDryfJkyqgQ" literals="_4IuRsLdQEeiLDryfJkyqgQ _3nnIsLdQEeiLDryfJkyqgQ"/>
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_lPqrkLdREeiLDryfJkyqgQ" characteristicType="_B_BocLdREeiLDryfJkyqgQ" literals="_MhQRELdREeiLDryfJkyqgQ _L0iVALdREeiLDryfJkyqgQ"/>
     </characteristicContainer>
-    <characteristicContainer id="_j8VXpKttEeirUesg_GcfaQ" entityName="char.denied">
-      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_o5nJ8KttEeirUesg_GcfaQ"/>
+    <characteristicContainer id="_bt525LdQEeiLDryfJkyqgQ" entityName="char.Webservice">
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_oaJDgLdREeiLDryfJkyqgQ" characteristicType="_v1EZcLdQEeiLDryfJkyqgQ" literals="_3nnIsLdQEeiLDryfJkyqgQ _4IuRsLdQEeiLDryfJkyqgQ"/>
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_pgMFkLdREeiLDryfJkyqgQ" characteristicType="_B_BocLdREeiLDryfJkyqgQ" literals="_MhQRELdREeiLDryfJkyqgQ _L0iVALdREeiLDryfJkyqgQ"/>
     </characteristicContainer>
-    <characteristicContainer id="_kgM5tKttEeirUesg_GcfaQ" entityName="char.system">
-      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_pkiWQKttEeirUesg_GcfaQ"/>
+    <characteristicContainer id="_cSS9ZLdQEeiLDryfJkyqgQ" entityName="char.TS:inv:data">
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_x3oRoLdREeiLDryfJkyqgQ" characteristicType="_v1EZcLdQEeiLDryfJkyqgQ" literals="_4IuRsLdQEeiLDryfJkyqgQ _3nnIsLdQEeiLDryfJkyqgQ"/>
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_ysy_ELdREeiLDryfJkyqgQ" characteristicType="_B_BocLdREeiLDryfJkyqgQ" literals="_L0iVALdREeiLDryfJkyqgQ _MhQRELdREeiLDryfJkyqgQ"/>
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_zLGrsLdREeiLDryfJkyqgQ" characteristicType="_U8ZRYLdREeiLDryfJkyqgQ" literals="_ezR28LdREeiLDryfJkyqgQ _eUiFcLdREeiLDryfJkyqgQ"/>
     </characteristicContainer>
-    <relatedCharacteristics id="_2UESBatvEeirUesg_GcfaQ" entityName="Report" characteristics="_iZedxKttEeirUesg_GcfaQ">
-      <relatedEntity xsi:type="repository:CollectionDataType" href="default.repository#_yrJzHHQjEeinoOBpMH07LA"/>
+    <characteristicContainer id="_c-swZLdQEeiLDryfJkyqgQ" entityName="char.TS:inv:app">
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_7NnwoLdREeiLDryfJkyqgQ" characteristicType="_v1EZcLdQEeiLDryfJkyqgQ" literals="_4IuRsLdQEeiLDryfJkyqgQ _3nnIsLdQEeiLDryfJkyqgQ"/>
+      <ownedCharacteristics xsi:type="characteristics:EnumCharacteristic" id="_8GM-cLdREeiLDryfJkyqgQ" characteristicType="_B_BocLdREeiLDryfJkyqgQ" literals="_L0iVALdREeiLDryfJkyqgQ _MhQRELdREeiLDryfJkyqgQ"/>
+    </characteristicContainer>
+    <relatedCharacteristics id="_BStflbdSEeiLDryfJkyqgQ" entityName="AccessrightsWebfrontend" characteristics="_aTz3dLdQEeiLDryfJkyqgQ">
+      <relatedEntity xsi:type="repository:BasicComponent" href="default.repository#_ZQv7UHCsEei11fv97AP7Vg"/>
     </relatedCharacteristics>
-    <relatedCharacteristics id="_CjI29atwEeirUesg_GcfaQ" entityName="Customer.id" characteristics="_iZedxKttEeirUesg_GcfaQ">
-      <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_rKAB3X7DEeiaS-Ue-vOVzA"/>
+    <relatedCharacteristics id="_DKZZ9bdSEeiLDryfJkyqgQ" entityName="AccessRightsWebservice" characteristics="_bt525LdQEeiLDryfJkyqgQ">
+      <relatedEntity xsi:type="repository:BasicComponent" href="default.repository#_a1V6kHCsEei11fv97AP7Vg"/>
     </relatedCharacteristics>
-    <relatedCharacteristics id="_C5eTVatwEeirUesg_GcfaQ" entityName="Customer.credentials" characteristics="_j8VXpKttEeirUesg_GcfaQ">
-      <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_rKAB3X7DEeiaS-Ue-vOVzA"/>
+    <relatedCharacteristics id="_ClXaRbdSEeiLDryfJkyqgQ" entityName="Accessrights_TS:inv:app" characteristics="_c-swZLdQEeiLDryfJkyqgQ">
+      <relatedEntity xsi:type="repository:BasicComponent" href="default.repository#_ZifLkHCsEei11fv97AP7Vg"/>
     </relatedCharacteristics>
-    <relatedCharacteristics id="_DxKJRatwEeirUesg_GcfaQ" entityName="Customer.purchasedProducts" characteristics="_iZedxKttEeirUesg_GcfaQ">
-      <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_rKAB3X7DEeiaS-Ue-vOVzA"/>
-    </relatedCharacteristics>
-    <relatedCharacteristics id="_BCI-RatwEeirUesg_GcfaQ" entityName="DbEntries" characteristics="_kgM5tKttEeirUesg_GcfaQ">
-      <relatedEntity xsi:type="repository:CollectionDataType" href="default.repository#_SR7kTIm0Eei-urmb0SU48A"/>
-    </relatedCharacteristics>
-    <relatedCharacteristics id="_VOEsFatwEeirUesg_GcfaQ" entityName="Query" characteristics="_kgM5tKttEeirUesg_GcfaQ">
-      <relatedEntity xsi:type="repository:CompositeDataType" href="default.repository#_ehhrHX-XEeiYVZcJd-4VXQ"/>
-    </relatedCharacteristics>
-    <relatedCharacteristics id="_W2td1atwEeirUesg_GcfaQ" entityName="List&lt;IOrderEntries>" characteristics="_kgM5tKttEeirUesg_GcfaQ">
-      <relatedEntity xsi:type="repository:CollectionDataType" href="default.repository#_UxQVvHQkEeinoOBpMH07LA"/>
+    <relatedCharacteristics id="_B1dnVbdSEeiLDryfJkyqgQ" entityName="AccessRights_TS:inv:data" characteristics="_cSS9ZLdQEeiLDryfJkyqgQ">
+      <relatedEntity xsi:type="repository:BasicComponent" href="default.repository#_ZynSQHCsEei11fv97AP7Vg"/>
     </relatedCharacteristics>
   </dataprocessing:DataSpecification>
   <emfprofileapplication:ProfileApplication>
